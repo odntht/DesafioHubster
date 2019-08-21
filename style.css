@@ -1,0 +1,44 @@
+body {
+  margin: 2rem;
+}
+
+main {
+  margin-top: 2rem;
+  background-color: #F9F8F6;
+}
+
+#categorias {
+  /* padding: 1rem; */
+}
+
+#produtos {
+  padding-right: 2rem;
+  padding-left: 8rem;
+
+}
+
+#carrinho {
+  padding: 1rem;
+  /* padding-right: 2rem; */
+}
+
+
+#finalizarVenda {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#categorias .list-group-item:hover {
+  cursor: pointer;
+  background-color: #C0C0C0;
+}
+
+#categorias .selecionado {
+  color: #E5E4E2;
+}
+
+
+
+.card:hover {
+  cursor: pointer;
+}
