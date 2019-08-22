@@ -99,35 +99,37 @@ function mudaCategoria(selecionado, json) {
   constroiProdutos(json.products, selecionado.id);
 }
 
+function finalizarVenda(){
+    alert("Sua compra foi efetuada!");
+    $("#carrinho").html(`<div class="list-group shadow">
 
-$("#finalizarVenda").click(function finalizarVenda() {
-  alert("Sua compra foi efetuada!");
-  $("#carrinho").html(`<div class="list-group shadow">
+      <a href="#" class="list-group-item list-group-item-action" id="subtotal">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Subtotal R$ <span>0,00</span>  </h5>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action" id="desconto">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Desconto <span>0</span>% </h5>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action" id="taxa">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Taxa de Serviço <span>0</span>% </h5>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action" id="total">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Total R$ <span>0,00</span> </h5>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action" id="finalizarVenda">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Finalizar Venda</h5>
+        </div>
+      </a>
+    </div>`);
+$("#finalizarVenda").click(() => finalizarVenda());
+}
 
-    <a href="#" class="list-group-item list-group-item-action" id="subtotal">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Subtotal R$ <span>0,00</span>  </h5>
-      </div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action" id="desconto">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Desconto <span>0</span>% </h5>
-      </div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action" id="taxa">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Taxa de Serviço <span>0</span>% </h5>
-      </div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action" id="total">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Total R$ <span>0,00</span> </h5>
-      </div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action" id="finalizarVenda">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Finalizar Venda</h5>
-      </div>
-    </a>
-  </div>`)
-});
+$("#finalizarVenda").click(() => finalizarVenda());
